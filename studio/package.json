@@ -15,11 +15,15 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/dashboard": "^3.1.5",
     "@sanity/vision": "^3.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "sanity": "^3.17.0",
+    "sanity-plugin-dashboard-widget-document-list": "^1.0.1",
+    "sanity-plugin-dashboard-widget-netlify": "^2.0.1",
+    "sanity-plugin-netlify-deploy-status-badge": "^1.0.0",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {
