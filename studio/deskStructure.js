@@ -21,7 +21,6 @@
 //   ])
 
 
-
 export const myStructure = (S) =>
   S.list()
     .title('Content')
@@ -46,9 +45,26 @@ export const myStructure = (S) =>
                 .child(S.document().schemaType('category').documentId('category')),
             ])
         ),
+        S.divider(),
+       
       // We also need to remove the new singletons from the main list
       ...S.documentTypeListItems().filter(
-        (listItem) => !['post', 'author', 'category'].includes(listItem.getId())
+        (listItem) => ![
+          'post', 
+          'author', 
+          'category',
+          'capabilitiesSection',
+          'logo',
+          'missionSection',
+          'navigation',
+          'storySection',
+          'heroSection',
+          'focusSection',
+          'connectionSection',
+          'processSection',
+          'formImage',
+          'sectionTitle'
+        ].includes(listItem.getId())
       ),
       S.divider(),
     ])

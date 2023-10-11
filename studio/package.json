@@ -17,6 +17,7 @@
   "dependencies": {
     "@sanity/color-input": "^3.1.0",
     "@sanity/dashboard": "^3.1.5",
+    "@sanity/icons": "^2.5.0",
     "@sanity/ui": "^1.8.2",
     "@sanity/vision": "^3.17.0",
     "phosphor-react": "^1.4.1",
@@ -26,6 +27,7 @@
     "react-is": "^18.2.0",
     "sanity": "^3.17.0",
     "sanity-plugin-asset-source-ogimage": "^2.0.0-2",
+    "sanity-plugin-asset-source-unsplash": "^1.1.1",
     "sanity-plugin-dashboard-widget-document-list": "^1.0.1",
     "sanity-plugin-dashboard-widget-netlify": "^2.0.1",
     "sanity-plugin-media": "^2.2.2",
@@ -40,6 +42,7 @@
     "@types/react": "^18.0.25",
     "@types/styled-components": "^5.1.26",
     "eslint": "^8.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "prettier": "^3.0.2",
     "typescript": "^5.1.6"
   },
