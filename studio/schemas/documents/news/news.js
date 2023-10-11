@@ -1,8 +1,9 @@
+import {TiersIcon} from '@sanity/icons'
 import { defineField, defineType } from "sanity";
 
 export default defineType({
     name: 'newsSection',
-    title: ' NEWS Section',
+    title: ' Media / Press Releases',
     type: 'document',
     fields: [
         defineField({
@@ -69,5 +70,6 @@ export default defineType({
                 },
             ],
         }),
-    ]
+    ],
+    icon: TiersIcon,
 })

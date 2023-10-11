@@ -1,3 +1,4 @@
+import {LinkIcon} from '@sanity/icons'
 import { defineField, defineType } from "sanity";
 
 export default defineType({
@@ -77,5 +78,6 @@ export default defineType({
             title: 'Youtube Link',
             type: 'string'
         })
-    ]
+    ],
+    icon: LinkIcon,
 })
