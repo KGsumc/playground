@@ -4,7 +4,7 @@ import post from './documents/blogs/post'
 import author from './documents/blogs/author'
 import newsSection from './documents/news/news'
 import caseStudies from './documents/case-studies/case-studies'
-import pageType from './documents/page'
+import pageType from './documents/pageType'
 
 //objects
 import blockContent from './objects/blockContent'

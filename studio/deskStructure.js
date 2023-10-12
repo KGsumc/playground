@@ -35,14 +35,26 @@ export const myStructure = (S) =>
             // Each will pull one of our new singletons
             .items([
               S.listItem()
-                .title('Blog Post')
-                .child(S.document().schemaType('post').documentId('post')),
+                .title('Blog Posts')
+                .child(
+                     S.documentList()
+                     .title('All Posts')
+                     .filter('_type == "post"')
+                ),
               S.listItem()
                 .title('Author')
-                .child(S.document().schemaType('author').documentId('author')),
+                .child(
+                  S.documentList()
+                  .title('Authors')
+                  .filter('_type == "author"')
+                ),
               S.listItem()
                 .title('Categories')
-                .child(S.document().schemaType('category').documentId('category')),
+                .child(
+                  S.documentList()
+                  .title('Categories')
+                  .filter('_type == "category"')
+                ),
             ])
         ),
         S.divider(),
@@ -63,7 +75,8 @@ export const myStructure = (S) =>
           'connectionSection',
           'processSection',
           'formImage',
-          'sectionTitle'
+          'sectionTitle',
+          'promotion'
         ].includes(listItem.getId())
       ),
       S.divider(),

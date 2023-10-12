@@ -1,14 +1,12 @@
 // ./schemas/pageType.ts
 
-import {DocumentsIcon} from '@sanity/icons'
 import {defineArrayMember, defineField, defineType} from 'sanity'
-
 
 // export const pageType = defineType({
   export default defineType({
-  name: 'pageType',
+  name: 'page',
   type: 'document',
-  title: 'Pages',
+  title: 'Page',
   fields: [
     defineField({name: 'title', type: 'string'}),
     defineField({
@@ -41,13 +39,8 @@ import {defineArrayMember, defineField, defineType} from 'sanity'
           type: 'reference',
           to: [{type: 'promotion'}],
         }),
-        defineArrayMember({
-          name: 'focusSection',
-          type: 'focusSection',
-        }),
         // etc...
       ],
     }),
   ],
-  icon: DocumentsIcon,
 })
